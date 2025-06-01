@@ -117,7 +117,11 @@ You can choose **either** Maven or the plain `javac`/`java` approach. Before act
    Replace `1.0.0` with the current version if it differs. The scraper will:
 
    1. Kill any stray Chrome processes.  
-   2. Prompt for a **Brad threshold** (a numeric value you choose).  
+   2. Prompt for a **Brad threshold** (a numeric value you choose). 
+      - You can enter any positive number; it defaults to **4000** if you cancel or provide invalid input.
+      - We recommend using **2000** for balanced sensitivity. The threshold determines how “sensitive” the scraper is to profitable rounds:
+          - A lower threshold (e.g., 2000) will mark more rounds as **Brad** (more accurate for small-profit detection) but may capture fewer overall bets.
+          - A higher threshold (e.g., 4000) is less sensitive and flags only larger profit rounds.
    3. Detect your Chrome profiles under `%LOCALAPPDATA%\Google\Chrome\User Data`.  
    4. Let you pick a profile via a pop-up.  
    5. Launch Chrome (non-headless) via `drivers/chrome_win64/chrome.exe` and load the Aviator game.  
