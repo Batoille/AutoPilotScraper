@@ -1,5 +1,5 @@
 # — Ignore all Maven build output from this project and any submodules —
-**/target/
+target/
 
 # If you are using the Maven wrapper, keep the wrapper JAR tracked:
 !.mvn/wrapper/maven-wrapper.jar
