@@ -1,4 +1,4 @@
-# AviatorScraperShare
+# AutoPilotScraper
 
 A Windows-only Java application that automates scraping of SportyBet’s Aviator game. It launches a visible Chrome instance using a bundled Chrome binary and ChromeDriver, captures bet data in real time, and writes results to a SQLite database (`betdata.db`). The scraper also logs summary statistics (profit/loss, “Brad” flags, etc.) into a separate table for downstream analysis.
 
@@ -7,7 +7,7 @@ A Windows-only Java application that automates scraping of SportyBet’s Aviator
 ## Directory Structure
 
 ```
-AviatorScraperShare/
+AutoPilotScraper/
 ├─ drivers/
 │   ├─ chrome_win64/
 │   │   └─ chrome.exe
@@ -129,7 +129,7 @@ You can choose **either** Maven or the plain `javac`/`java` approach. Before act
 
 1. **Download Selenium Java client** (e.g. `selenium-java-4.x.x.jar`) and **SQLite JDBC** (e.g. `sqlite-jdbc-3.x.x.jar`). Place both JARs in a folder called `lib/` at project root:
    ```
-   AviatorScraperShare/
+   AutoPilotScraper/
    ├─ lib/
    │   ├─ selenium-java-4.x.x.jar
    │   ├─ sqlite-jdbc-3.x.x.jar
