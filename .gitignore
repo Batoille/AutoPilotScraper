@@ -1,7 +1,12 @@
-target/
+# — Ignore all Maven build output from this project and any submodules —
+**/target/
+**/build/
+
+# If you are using the Maven wrapper, keep the wrapper JAR tracked:
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+
+# Ignore any local configuration file
+config.properties
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
@@ -17,7 +22,7 @@ target/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
@@ -27,12 +32,9 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
+### macOS ###
 .DS_Store
