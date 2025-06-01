@@ -1,11 +1,3 @@
-"use strict";
-// Copyright 2024 The Chromium Authors
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-// TODO(b:272150598): Investigate sharing this with
-// ../embedded_a11y_helper/content.ts.
-(function () {
-    const s = document.createElement('script');
-    s.src = chrome.runtime.getURL('reading_mode_gdocs_helper/gdocs_script.js');
-    document.documentElement.appendChild(s);
-})();
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d23bbffe429bf823e99e89da755996f2c5ee1594b926b81bba0eb6d0ab4e745
+size 442

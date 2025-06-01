@@ -1,3 +1,4 @@
 drivers/chrome_win64/hyphen-data/*.hyb filter=lfs diff=lfs merge=lfs -text
 drivers/chrome_win64/MEIPreload/*.pb filter=lfs diff=lfs merge=lfs -text
+drivers/** filter=lfs diff=lfs merge=lfs -text
 drivers/chrome_win64/chrome.dll filter=lfs diff=lfs merge=lfs -text
