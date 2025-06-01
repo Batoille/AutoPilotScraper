@@ -1,39 +1,42 @@
-# — Ignore all Maven build output from this project and any submodules —
+# — Ignore Maven/Gradle build outputs —
 target/
+build/
 
-# If you are using the Maven wrapper, keep the wrapper JAR tracked:
-!.mvn/wrapper/maven-wrapper.jar
-
-# Ignore any local configuration file
+# — Ignore local configuration file —
 config.properties
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# — Ignore IDE project files —
+# IntelliJ IDEA
+.idea/
 *.iml
+*.iws
 *.ipr
 
-### Eclipse ###
-.apt_generated
+# Eclipse
 .classpath
-.factorypath
 .project
 .settings/
-.springBeans
-.sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# VS Code
 .vscode/
 
-### macOS ###
+# — Ignore OS-specific junk —
 .DS_Store
+Thumbs.db
+
+# — Ignore runtime database files (SQLite) —
+*.db
+
+# — Ignore Python cache (if you have Python scripts) —
+__pycache__/
+*.py[cod]
+
+# — Ignore log or output folders/files —
+logs/
+*.log
+records/
+*.csv
+
+# — Do NOT ignore these (so your bundled executables remain) —
+!drivers/chrome_win64/chrome.exe
+!drivers/chromedriver.exe
